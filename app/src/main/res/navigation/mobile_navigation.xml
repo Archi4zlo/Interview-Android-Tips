@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.archi4zlo.interviewandroidtips.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tips"
+        android:name="com.archi4zlo.interviewandroidtips.ui.tips.TipsFragment"
+        android:label="@string/title_tips"
+        tools:layout="@layout/fragment_tips" >
+        <action
+            android:id="@+id/action_navigation_tips_to_selectedTipFragment"
+            app:destination="@id/selectedTipFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.archi4zlo.interviewandroidtips.ui.favourite.FavouriteFragment"
+        android:label="@string/title_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/selectedTipFragment"
+        android:name="com.archi4zlo.interviewandroidtips.ui.selectedtip.SelectedTipFragment"
+        android:label="fragment_selected_tip"
+        tools:layout="@layout/fragment_selected_tip" >
+        <action
+            android:id="@+id/action_selectedTipFragment_to_detailTipFragment"
+            app:destination="@id/detailTipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.archi4zlo.interviewandroidtips.ui.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.archi4zlo.interviewandroidtips.ui.policy.PolicyFragment"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_policy" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.archi4zlo.interviewandroidtips.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/detailTipFragment"
+        android:name="com.archi4zlo.interviewandroidtips.ui.detail.DetailTipFragment"
+        android:label="fragment_detail_tip"
+        tools:layout="@layout/fragment_detail_tip" />
+</navigation>

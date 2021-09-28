@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/privacy_over"
+        android:title="Privacy Policy"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_policy_balck_24dp"/>
+
+    <item android:id="@+id/about_over"
+        android:title="About"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_about_balck_24dp"/>
+    <item android:id="@+id/setting_over"
+        android:title="Setting"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_setting_balck_24dp"/>
+</menu>
